@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "code": "SMARTPHONE",
+      "intitule": "smart phone"
+    },
+    {
+      "id": 2,
+      "code": "ORDINATEUR",
+      "intitule": "Ordinateur portable"
+    },
+    {
+      "id": 3,
+      "code": "ELECTROMENAGER",
+      "intitule": "Electroménager"
+    },
+    {
+      "id": 4,
+      "code": "TV",
+      "intitule": "Télévision"
+    },
+    {
+      "id": 5,
+      "code": "DIVERSrr",
+      "intitule": "Divers"
+    },
+    {
+      "id": 6,
+      "code": "test",
+      "intitule": "test"
+    }
+  ],
+  "produits": [
+    {
+      "id": 1,
+      "reference": "A001",
+      "intitule": "Téléphone Portable Samsung Galaxy A10 / Noir ",
+      "categorieId": 1,
+      "quantite": 10,
+      "prix": 420,
+      "namephoto": "A10.jpg",
+      "photo": "images/A10.jpg"
+    },
+    {
+      "id": 2,
+      "reference": "A002",
+      "intitule": "SAMSUNG GALAXY A20 BLEU",
+      "categorieId": "1",
+      "quantite": "5",
+      "prix": "700",
+      "namephoto": "A20.jpg",
+      "photo": "images/A20.jpg"
+    },
+    {
+      "id": 3,
+      "reference": "A003",
+      "intitule": "Smartphone Xiaomi Redmi Note 11 Gris 4go 128 GO",
+      "quantite": 15,
+      "prix": 880,
+      "namephoto": "Pro11.jpg",
+      "photo": "images/Pro11.jpg"
+    },
+    {
+      "id": 4,
+      "reference": "A004",
+      "intitule": "REDMI-NOTE10PRO/8G-128G/GB",
+      "categorieId": 1,
+      "quantite": 30,
+      "prix": 1000,
+      "namephoto": "Pro10.jpg",
+      "photo": "images/Pro10.jpg"
+    },
+    {
+      "id": 5,
+      "reference": "A005",
+      "intitule": "Smartphone Oppo Reno 8T 4G Noir",
+      "categorieId": 1,
+      "quantite": 25,
+      "prix": 1100,
+      "namephoto": "reno8T.jpg",
+      "photo": "images/reno8T.jpg"
+    },
+    {
+      "id": 6,
+      "reference": "A006",
+      "intitule": "Téléphone Oppo Reno 8T",
+      "categorieId": 1,
+      "quantite": 25,
+      "prix": 1100,
+      "namephoto": "reno8T.jpg",
+      "photo": "images/reno8T.jpg"
+    },
+    {
+      "id": 7,
+      "reference": "A007",
+      "intitule": "SMARTPHONE XIAOMI 12 PRO / 12 GO / 256 GO / BLEU",
+      "categorieId": 1,
+      "quantite": 5,
+      "prix": 3700,
+      "namephoto": "pro11.jpg",
+      "photo": "images/pro11.jpg"
+    },
+    {
+      "id": 8,
+      "reference": "A008",
+      "intitule": "Mi Camera 2K Magnetic Mount",
+      "categorieId": 5,
+      "quantite": 40,
+      "prix": 139,
+      "namephoto": "2k.jpg",
+      "photo": "images/2k.jpg"
+    },
+    {
+      "id": 9,
+      "reference": "A009",
+      "intitule": "Mi Smart Clock",
+      "categorieId": 5,
+      "quantite": 20,
+      "prix": 219,
+      "namephoto": "smartClock.jpg",
+      "photo": "images/smartClock.jpg"
+    },
+    {
+      "id": 10,
+      "reference": "A010",
+      "intitule": "Mi Temperature and Humidity Monitor Pro",
+      "categorieId": 5,
+      "quantite": 10,
+      "prix": 90,
+      "namephoto": "tempHum.jpg",
+      "photo": "images/tempHum.jpg"
+    },
+    {
+      "id": 11,
+      "reference": "A011",
+      "intitule": "Xiaomi Smart Band 7 Pro",
+      "categorieId": 5,
+      "quantite": 50,
+      "prix": 379,
+      "namephoto": "smartBand7Pro.jpg",
+      "photo": "images/smartBand7Pro.jpg"
+    },
+    {
+      "id": 12,
+      "reference": "A012",
+      "intitule": "Xiaomi FlipBuds Pro Ecouteur Sans Fil",
+      "categorieId": 5,
+      "quantite": 30,
+      "prix": 720,
+      "namephoto": "flipBudsPro.jpg",
+      "photo": "images/flipBudsPro.jpg"
+    },
+    {
+      "id": 13,
+      "reference": "A013",
+      "intitule": "Xiaomi Smart Band 7 Pro",
+      "categorieId": 5,
+      "quantite": 10,
+      "prix": 379,
+      "namephoto": "smartBand7Pro.jpg",
+      "photo": "images/smartBand7Pro.jpg"
+    },
+    {
+      "id": 14,
+      "reference": "A014",
+      "intitule": "Xiaomi Watch S1",
+      "categorieId": 5,
+      "quantite": 5,
+      "prix": 649,
+      "namephoto": "WatchS1Active.jpg",
+      "photo": "images/WatchS1Active.jpg"
+    },
+    {
+      "id": 15,
+      "reference": "A015",
+      "intitule": "Mi Smart Kettle Pro Bouilloire Intelligente",
+      "categorieId": 3,
+      "quantite": 100,
+      "prix": 229,
+      "namephoto": "smartKettlepProBlanco.jpg",
+      "photo": "images/smartKettlepProBlanco.jpg"
+    },
+    {
+      "id": 16,
+      "reference": "A016",
+      "intitule": "TV XIAOMI 55'' SMART ANDROID A3 ULTRA HD 4K",
+      "categorieId": 4,
+      "quantite": 5,
+      "prix": 2100,
+      "namephoto": "TV.jpg",
+      "photo": "images/TV.jpg"
+    },
+    {
+      "id": 17,
+      "reference": "A017",
+      "intitule": "RÉFRIGÉRATEUR MONTBLANC FGE23 230 LITRES DEFROST - SILVER",
+      "categorieId": 3,
+      "quantite": 12,
+      "prix": 739,
+      "namephoto": "RefMonblanc.jpg",
+      "photo": "images/RefMonblanc.jpg"
+    },
+    {
+      "id": 18,
+      "reference": "A018",
+      "intitule": "Mini bar acer",
+      "categorieId": 3,
+      "quantite": 14,
+      "prix": 920,
+      "namephoto": "miniBarAcer.jpg",
+      "photo": "images/miniBarAcer.jpg"
+    },
+    {
+      "id": 19,
+      "reference": "A019",
+      "intitule": "DFFF",
+      "categorieId": 5,
+      "quantite": 12,
+      "prix": 3433,
+      "namephoto": "smartClock.jpg",
+      "photo": "images/smartClock.jpg"
+    },
+    {
+      "id": 20,
+      "reference": "A020",
+      "intitule": "Parasol de plage PARUV Windstop turquoise jaune vert foncé UPF50+ 2 places",
+      "categorieId": 3,
+      "quantite": 20,
+      "prix": 135,
+      "namephoto": "parasol.jpg",
+      "photo": "images/parasol.jpg"
+    },
+    {
+      "reference": "A021",
+      "intitule": "iphone 13",
+      "categorieId": "1",
+      "quantite": "15",
+      "prix": "2000",
+      "namephoto": "iphone13",
+      "photo": "images/iphone13.jfif",
+      "id": 21
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "nom": "BEN SALAH",
+      "prenom": "Ali",
+      "adresse": "Sfax",
+      "telephone": "58585800"
+    }
+  ],
+  "Commandes": [
+    {
+      "id": 1,
+      "mail": "testmail@gmail.com",
+      "adresse": "testAdresse",
+      "numero": "19263578"
+    },
+    {
+      "mail": "zarzismehdi8@gmail.com",
+      "adresse": "Rte djerba, kasr ouled said",
+      "numero": "",
+      "id": 2
+    }
+  ]
+}
