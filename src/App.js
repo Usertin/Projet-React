@@ -1,7 +1,7 @@
 //component imports
 import './App.css';
 import ListCards from './Components/ClientSide/ListCards';
-// import PasserCommande from "./components/ClientSide/PasserCommande.js";
+import HomePage from "./Components/HomePage.js";
 import AjouterArticle from './Components/ServerSide/AjouterArticle';
 import SupprimerArticle from './Components/ServerSide/SupprimerArticle';
 import ModiferArticle from './Components/ServerSide/ModifierArticle';
@@ -74,8 +74,8 @@ function App() {
             <Route path = "pdfCart" element = {<PdfCard />}></Route>
             <Route path = "/supprimerArticle/:id" element = {<SupprimerArticle />}></Route>
             <Route path = "/modifierArticle/:id" element = {<ModiferArticle />}></Route>
-            {/* <Route path = "/clientList" element = {<ListCards />}></Route>
-            <Route path = "/eltsPanier" element = {<EltsPanier />}></Route> */}
+            <Route path = "/" element = {<HomePage />}></Route>
+            {/* <Route path = "/eltsPanier" element = {<EltsPanier />}></Route> */}
           </Routes>
         </Router>
       </CartProvider>

@@ -43,16 +43,6 @@
       "photo": "images/A10.jpg"
     },
     {
-      "id": 2,
-      "reference": "A002",
-      "intitule": "SAMSUNG GALAXY A20 BLEU",
-      "categorieId": "1",
-      "quantite": "5",
-      "prix": "700",
-      "namephoto": "A20.jpg",
-      "photo": "images/A20.jpg"
-    },
-    {
       "id": 3,
       "reference": "A003",
       "intitule": "Smartphone Xiaomi Redmi Note 11 Gris 4go 128 GO",
