@@ -41,6 +41,8 @@ function App() {
       setIsLoggedIn(true);
       if(user.email == "admin@gmail.com")
         setUserType("admin");
+      else
+        setUserType("user");
     }
     else
       setIsLoggedIn(false);
@@ -73,7 +75,7 @@ function App() {
                   navbarScroll
                 >
                   <Nav.Link href="elements">Liste d'articles</Nav.Link>
-                  <Nav.Link href="ajouterArticle">ajout d'un article</Nav.Link>
+                  {userType == "admin" && <Nav.Link href="ajouterArticle">ajout d'un article</Nav.Link>}
                   
                 </Nav>
                 
@@ -92,7 +94,7 @@ function App() {
             </Container>
           </Navbar>
           <Routes>
-            <Route path="/elements" element = {<ListCards />}></Route>
+            <Route path="/elements" element = {<ListCards type ={userType} />}></Route>
             <Route path = "/ajouterArticle" element = {<AjouterArticle />}></Route>
             <Route path = "/cart" element = {<Cart />}></Route>
             <Route path = "pdfCart" element = {<PdfCard />}></Route>

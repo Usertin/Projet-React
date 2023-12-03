@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ElementsArticleCard from "./ElementsArticleCard";
 import 'bootstrap/dist/css/bootstrap.css';
 
-function ListCards() {
+function ListCards(props) {
     
     const [article,setArticle] = useState([]);
 
@@ -22,7 +22,7 @@ function ListCards() {
     
     return (
         <div>
-            <ElementsArticleCard art = {article} />
+            <ElementsArticleCard art = {article} type={props.type}/>
         </div>
     );
 }
