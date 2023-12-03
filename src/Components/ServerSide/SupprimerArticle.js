@@ -12,7 +12,7 @@ function SupprimerArticle() {
             {
                 console.log(Response.data);
             })
-            .catch(console.error())
+            .catch(console.error());
         nav("/elements")   
     },[id])
     return (

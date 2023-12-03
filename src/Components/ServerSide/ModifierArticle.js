@@ -20,6 +20,8 @@ function ModifArticle() {
     const[namephoto,setNamephoto] = useState("");
     const[photo,setPhoto] = useState("");
 
+    const [disabled,setDisabled] = useState(true);
+
     useEffect(() =>
     {
         axios.get(`http://localhost:3001/produits/${id}`)
@@ -44,26 +46,37 @@ function ModifArticle() {
         };
         console.log(nouvProduit);
 
-        axios.put(`http://localhost:3001/produits/${id}`,nouvProduit)
+        axios.patch(`http://localhost:3001/produits/${id}`,nouvProduit)
         .then (res =>{
             console.log(res.data.reference);
             nav("/elements");
         });
+
+    }
+
+    const verifierChamps =() =>
+    {
+        if((document.getElementById("intitule").value != "") && (document.getElementById("reference").value != "") && (document.getElementById("categorieid").value != "") && (document.getElementById("prix").value != "") && (document.getElementById("quantite").value != "") && (document.getElementById("namephoto").value != "") && (document.getElementById("photo").value != ""))
+            setDisabled(false);
+        else
+            setDisabled(true);
     }
 
     return (
         <form  onSubmit={ValiderModif}>
             <center><h1>Modifier Un Element</h1></center>
             <InputGroup className="mb-3">
-                <InputGroup.Text id="inputGroup-sizing-default">
+                <InputGroup.Text id="generic">
                     Intitule
                 </InputGroup.Text>
                 <Form.Control
+                    id="intitule"
                     type="text"
                     placeholder={produit.intitule}
                     aria-label="Intitule"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setIntitule(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
 
@@ -72,6 +85,7 @@ function ModifArticle() {
                     Réference
                 </InputGroup.Text>
                 <Form.Control
+                    id="reference"
                     placeholder={produit.reference}
                     aria-label="Réference"
                     aria-describedby="inputGroup-sizing-default"
@@ -84,6 +98,7 @@ function ModifArticle() {
                     CategorieId
                 </InputGroup.Text>
                 <Form.Control
+                    id="categorieid"
                     placeholder={produit.categorieId}
                     aria-label="CategorieId"
                     aria-describedby="inputGroup-sizing-default"
@@ -96,6 +111,7 @@ function ModifArticle() {
                     Prix
                 </InputGroup.Text>
                 <Form.Control
+                    id="prix"
                     placeholder={produit.prix}
                     aria-label="Prix"
                     aria-describedby="inputGroup-sizing-default"
@@ -108,6 +124,7 @@ function ModifArticle() {
                     Quantité
                 </InputGroup.Text>
                 <Form.Control
+                    id="quantite"
                     placeholder={produit.quantite}
                     aria-label="Quantité"
                     aria-describedby="inputGroup-sizing-default"
@@ -120,6 +137,7 @@ function ModifArticle() {
                     NamePhoto
                 </InputGroup.Text>
                 <Form.Control
+                    id="namephoto"
                     placeholder={produit.namephoto}
                     aria-label="NamePhoto"
                     aria-describedby="inputGroup-sizing-default"
@@ -132,6 +150,7 @@ function ModifArticle() {
                     Photo
                 </InputGroup.Text>
                 <Form.Control
+                    id="photo"
                     placeholder={produit.photo}
                     aria-label="Photo"
                     aria-describedby="inputGroup-sizing-default"
@@ -140,7 +159,7 @@ function ModifArticle() {
             </InputGroup>
             
             <div className="d-grid gap-2">
-                <Button as="input" type="submit" variant="success" size="lg" value="Valider Modification(s)"/>
+                <Button as="input" type="submit" disabled = {disabled} variant="success" size="lg" value="Valider Modification(s)"/>
             </div>
         </form>
     );
