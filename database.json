@@ -7,28 +7,23 @@
     },
     {
       "id": 2,
-      "code": "ORDINATEUR",
+      "code": "ORDINATEUR1",
       "intitule": "Ordinateur portable"
     },
     {
       "id": 3,
+      "code": "ORDINATEUR2",
+      "intitule": "Ordinateur desktop"
+    },
+    {
+      "id": 4,
       "code": "ELECTROMENAGER",
       "intitule": "Electroménager"
     },
     {
-      "id": 4,
-      "code": "TV",
-      "intitule": "Télévision"
-    },
-    {
       "id": 5,
-      "code": "DIVERSrr",
+      "code": "DIVERS",
       "intitule": "Divers"
-    },
-    {
-      "id": 6,
-      "code": "test",
-      "intitule": "test"
     }
   ],
   "produits": [
@@ -191,31 +186,6 @@
       "namephoto": "iphone13",
       "photo": "images/iphone13.jfif",
       "id": 21
-    }
-  ],
-  "clients": [
-    {
-      "id": 1,
-      "nom": "BEN SALAH",
-      "prenom": "Ali",
-      "adresse": "Sfax",
-      "mail": "bensalah@gmail.com",
-      "telephone": "58585800",
-      "password": "bensalah1234"
-    }
-  ],
-  "Commandes": [
-    {
-      "id": 1,
-      "mail": "testmail@gmail.com",
-      "adresse": "testAdresse",
-      "numero": "19263578"
-    },
-    {
-      "mail": "zarzismehdi8@gmail.com",
-      "adresse": "Rte djerba, kasr ouled said",
-      "numero": "",
-      "id": 2
     }
   ]
 }

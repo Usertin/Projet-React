@@ -42,7 +42,7 @@ function Cart() {
     }
 
     if(cartCount == 0)
-        return <h1>Cart is empty</h1>
+        return <center><div><img src="images/emptyCart.jpg" alt="empty cart" style={{ height: '500px', objectFit: 'cover' }}></img> <h3> Panier est vide </h3></div></center>
     return (
         <div>
             {payement ? <StripeCheckout 

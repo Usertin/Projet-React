@@ -1,13 +1,12 @@
 //component imports
 import './App.css';
 import ListCards from './Components/ClientSide/ListCards';
-import HomePage from "./Components/HomePage.js";
 import AjouterArticle from './Components/ServerSide/AjouterArticle';
 import SupprimerArticle from './Components/ServerSide/SupprimerArticle';
 import ModiferArticle from './Components/ServerSide/ModifierArticle';
 import LoginClient from './Components/AuthentificationClient/loginClient.js';
 import SignUp from './Components/AuthentificationClient/SignUp.js';
-import UncontrolledExample from './UncontrolledExample.js';
+import HomePage from './Components/HomePage.js';
 
 //react bootstrap imports :ooo
 import 'bootstrap/dist/css/bootstrap.css'
@@ -46,7 +45,6 @@ function App() {
     }
     else
       setIsLoggedIn(false);
-    
   })
 
   const logOut = () =>
@@ -66,7 +64,7 @@ function App() {
         <Router>
             <Navbar sticky='top' expand="lg" className="bg-body-tertiary">
             <Container fluid>
-              <Navbar.Brand href="/">Home</Navbar.Brand>
+              <Navbar.Brand href="/"><img src="images/home.png" alt = "home"/></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav
@@ -86,10 +84,9 @@ function App() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="btn btn-outline-primary">Search</Button>
                 </Form>
-                {!isLoggedIn ? <Link className='btn btn-outline-primary' to ="/loginClient">Se connecter</Link> : <Button variant="outline-success" onClick={logOut}>Déconnecter</Button>}
-                {userType == "user" && <Button variant="outline-success">test</Button>}
+                {!isLoggedIn ? <Link className='btn btn-outline-primary' to ="/loginClient">Se connecter</Link> : <Link to = "/" className="btn btn-outline-danger" onClick={logOut}>Déconnecter </Link>}
               </Navbar.Collapse>  
             </Container>
           </Navbar>
@@ -103,7 +100,7 @@ function App() {
             <Route path = "/" element = {<HomePage />}></Route>
             <Route path= "/signup" exact element = {<SignUp />}></Route>
             <Route path="/loginClient" exact element={<LoginClient />} />
-            <Route path="/test" element = {<UncontrolledExample />} ></Route>
+            <Route path="/test" element = {<HomePage />} ></Route>
           </Routes>
         </Router>
       </CartProvider>

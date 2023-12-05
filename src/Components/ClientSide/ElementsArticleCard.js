@@ -37,7 +37,7 @@ function ElementsArticleCard(props) {
 
     return (
         <div>
-            <AppBar position = "static" color = "default">
+            {props.type == "user" && <AppBar position = "static" color = "default">
                 <Toolbar>
                     <Button color = "inherit">
                         <Link to='/cart'>
@@ -45,7 +45,7 @@ function ElementsArticleCard(props) {
                         </Link>
                     </Button>
                 </Toolbar>
-            </AppBar>
+            </AppBar>}
             <Row xs={1} md={4} className="g-3">
             {
                 props.art.map((elt) => 
@@ -59,7 +59,7 @@ function ElementsArticleCard(props) {
                                         {elt.prix}Dt
                                     </Card.Text>
                                     <Row>
-                                        <Btn variant="primary" disabled = {elt.quantite <= 1} onClick={() => addToCart(elt)}>Add to cart</Btn>
+                                        {props.type == "user" && <Btn variant="primary" disabled = {elt.quantite <= 1} onClick={() => addToCart(elt)}>Add to cart</Btn>}
                                         {props.type == "admin" && <Btn variant="info" onClick={() => nav(`/modifierArticle/${elt.id}`)}>Modify Element</Btn>}
                                         {props.type == "admin" && <Btn variant="danger" onClick={() => nav(`/supprimerArticle/${elt.id}`)}>Delete Element</Btn>}
                                     </Row>

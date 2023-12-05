@@ -90,6 +90,7 @@ function ModifArticle() {
                     aria-label="Réference"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setReference(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
 
@@ -103,6 +104,7 @@ function ModifArticle() {
                     aria-label="CategorieId"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setCategorieId(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
 
@@ -116,6 +118,7 @@ function ModifArticle() {
                     aria-label="Prix"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setPrix(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
 
@@ -129,6 +132,7 @@ function ModifArticle() {
                     aria-label="Quantité"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setQuantite(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
 
@@ -142,6 +146,7 @@ function ModifArticle() {
                     aria-label="NamePhoto"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setNamephoto(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
 
@@ -155,6 +160,7 @@ function ModifArticle() {
                     aria-label="Photo"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setPhoto(e.target.value)}}
+                    onBlur={verifierChamps}
                 />
             </InputGroup>
             
