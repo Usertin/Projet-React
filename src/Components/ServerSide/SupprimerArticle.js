@@ -5,20 +5,22 @@ import { useNavigate, useParams } from "react-router-dom";
 function SupprimerArticle() {
     const nav = useNavigate();
     const {id} = useParams();
+    const {art} = useParams();
+
     useEffect (() =>
     {
         axios.delete(`http://localhost:3001/produits/${id}`)
             .then (Response => 
             {
-                console.log(Response.data);
+                console.log(art);
+                //console.log(Response.data);
             })
             .catch(console.error());
-        nav("/elements")   
-    },[id])
+        nav("/elements");
+    },[id]);
     return (
-        <div>
-            ok supression {id}
-        </div>
+        <>
+        </>
     );
 }
 

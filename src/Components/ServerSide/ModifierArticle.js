@@ -156,7 +156,7 @@ function ModifArticle() {
                 </InputGroup.Text>
                 <Form.Control
                     id="photo"
-                    placeholder={produit.photo}
+                    value={photo}
                     aria-label="Photo"
                     aria-describedby="inputGroup-sizing-default"
                     onChange={(e)=>{setPhoto(e.target.value)}}

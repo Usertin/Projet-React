@@ -12,6 +12,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useEffect } from 'react';
 
+
 function ElementsArticleCard(props) {
     const {cartCount,addItem} = useShoppingCart();
     const nav = useNavigate();
@@ -60,8 +61,8 @@ function ElementsArticleCard(props) {
                                     </Card.Text>
                                     <Row>
                                         {props.type == "user" && <Btn variant="primary" disabled = {elt.quantite <= 1} onClick={() => addToCart(elt)}>Add to cart</Btn>}
-                                        {props.type == "admin" && <Btn variant="info" onClick={() => nav(`/modifierArticle/${elt.id}`)}>Modify Element</Btn>}
-                                        {props.type == "admin" && <Btn variant="danger" onClick={() => nav(`/supprimerArticle/${elt.id}`)}>Delete Element</Btn>}
+                                        {props.type == "admin" && <Btn variant="info" onClick={() => nav(`/modifierArticle/${elt.id},${props.art}`)}>Modify Element</Btn>}
+                                        {props.type == "admin" && <Btn variant="danger" onClick={() => nav(`/supprimerArticle/${elt}`)}>Delete Element</Btn>}
                                     </Row>
                                 </Card.Body>
                                 </Card>

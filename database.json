@@ -38,16 +38,6 @@
       "photo": "images/A10.jpg"
     },
     {
-      "id": 4,
-      "reference": "A004",
-      "intitule": "REDMI-NOTE10PRO/8G-128G/GB",
-      "categorieId": 1,
-      "quantite": 30,
-      "prix": 1000,
-      "namephoto": "Pro10.jpg",
-      "photo": "images/Pro10.jpg"
-    },
-    {
       "id": 6,
       "reference": "A006",
       "intitule": "Téléphone Oppo Reno 8T",
