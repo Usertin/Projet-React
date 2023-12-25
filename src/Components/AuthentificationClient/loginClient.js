@@ -46,7 +46,6 @@ const LoginClient = () =>
             sendPasswordResetEmail(auth, email)
             .then(() =>
             {
-                alert("email de réinitialisation de mot de passe a été envoyé");
                 console.log("email de réinitialisation de mot de passe a été envoyé");
             })
             .catch((error) =>
