@@ -9,10 +9,7 @@ function ListCards(props) {
 
     useEffect(() =>
     {
-        async = () =>
-        {
-            try
-        }
+        
         axios.get("http://localhost:3001/produits")
         .then(response => (
             setArticle(response.data)
