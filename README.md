@@ -1,3 +1,11 @@
+# informations d'un utilisateur :
+zarzismehdi7@gmail.com
+test1234
+
+# informations d'un admin : 
+admin@gmail.com
+admin1234
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
